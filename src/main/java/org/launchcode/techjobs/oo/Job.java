@@ -30,6 +30,36 @@ public class Job {
         this.coreCompetency = coreCompetency;
     }
 
+
+    //public String toString() {
+    //    return System.lineSeparator() +
+    //            "Name: " + name + System.lineSeparator() +
+    //            "Employer: " + employer.toString() + System.lineSeparator() +
+    //            "Location: " + location.toString() + System.lineSeparator() +
+    //            "Position Type: " + positionType.toString() + System.lineSeparator() +
+    //            "Core Competency: " + coreCompetency.toString() + System.lineSeparator();
+    //}
+
+
+    @Override
+    public String toString() {
+        String result = System.lineSeparator();
+
+        result += "ID: " + id + System.lineSeparator();
+        result += "Name: " + (name != null ? name : "Data not available") + System.lineSeparator();
+        result += "Employer: " + (employer != null ? employer.getValue() : "Data not available") + System.lineSeparator();
+        result += "Location: " + (location != null ? location.getValue() : "Data not available") + System.lineSeparator();
+        result += "Position Type: " + (positionType != null ? positionType.getValue() : "Data not available") + System.lineSeparator();
+        result += "Core Competency: " + (coreCompetency != null ? coreCompetency.getValue() : "Data not available") + System.lineSeparator();
+
+        return result;
+    }
+
+
+
+
+
+
     // TODO: Add custom equals and hashCode methods. Consider two Job objects "equal" when their id fields
     //  match.
     public boolean equals(Object o) {
