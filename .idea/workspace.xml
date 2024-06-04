@@ -5,14 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="59ff47a6-ece6-4e2e-b777-6247aa1f282e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/JobField.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/CoreCompetency.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/CoreCompetency.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/Employer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/Employer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/Job.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/Job.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/Location.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/PositionType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/PositionType.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/launchcode/techjobs/oo/JobTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/launchcode/techjobs/oo/JobTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -70,6 +64,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Gradle.Build techjobs-oo-java-graded-17.executor": "Run",
+    "Gradle.JobTest.executor": "Run",
     "Gradle.JobTest.testJobConstructorSetsAllFields.executor": "Run",
     "Gradle.JobTest.testJobsForEquality.executor": "Run",
     "Gradle.JobTest.testSettingJobId.executor": "Run",
@@ -86,7 +81,7 @@
     "last_opened_file_path": "/Users/zeynepkaya/Desktop/LaunchCode/techjobs-oo-java-graded-17"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Gradle.JobTest.testToStringHandlesEmptyField">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.launchcode.techjobs.oo.Main" />
       <module name="techjobs-oo-java17-graded.main" />
@@ -100,7 +95,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JobTest.testJobsForEquality" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="JobTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -113,7 +108,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;org.launchcode.techjobs.oo.JobTest.testJobsForEquality&quot;" />
+            <option value="&quot;org.launchcode.techjobs.oo.JobTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -210,7 +205,7 @@
     </configuration>
     <list>
       <item itemvalue="Application.Main" />
-      <item itemvalue="Gradle.JobTest.testJobsForEquality" />
+      <item itemvalue="Gradle.JobTest" />
       <item itemvalue="Gradle.JobTest.testToStringContainsCorrectLabelsAndData" />
       <item itemvalue="Gradle.JobTest.testToStringHandlesEmptyField" />
       <item itemvalue="Gradle.JobTest.testToStringStartsAndEndsWithNewLine" />
@@ -218,11 +213,11 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
         <item itemvalue="Gradle.JobTest.testToStringHandlesEmptyField" />
+        <item itemvalue="Gradle.JobTest" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="Gradle.JobTest.testToStringContainsCorrectLabelsAndData" />
         <item itemvalue="Gradle.JobTest.testToStringStartsAndEndsWithNewLine" />
-        <item itemvalue="Gradle.JobTest.testJobsForEquality" />
       </list>
     </recent_temporary>
   </component>
@@ -285,26 +280,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/Job.java</url>
-          <line>18</line>
-          <properties class="org.launchcode.techjobs.oo.Job" method="&lt;init&gt;">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/Job.java</url>
-          <line>23</line>
-          <properties class="org.launchcode.techjobs.oo.Job" method="&lt;init&gt;">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/Job.java</url>
-          <line>64</line>
-          <properties class="org.launchcode.techjobs.oo.Job" method="equals">
+          <line>97</line>
+          <properties class="org.launchcode.techjobs.oo.Job">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
@@ -312,16 +289,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/org/launchcode/techjobs/oo/JobTest.java</url>
-          <line>17</line>
-          <properties class="org.launchcode.techjobs.oo.JobTest" method="testJobConstructorSetsAllFields">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/test/java/org/launchcode/techjobs/oo/JobTest.java</url>
-          <line>34</line>
+          <line>36</line>
           <properties class="org.launchcode.techjobs.oo.JobTest" method="testJobsForEquality">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
@@ -330,7 +298,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/org/launchcode/techjobs/oo/JobTest.java</url>
-          <line>60</line>
+          <line>62</line>
           <properties class="org.launchcode.techjobs.oo.JobTest" method="testToStringHandlesEmptyField">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
@@ -401,27 +369,31 @@
           <option name="timeStamp" value="31" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/Job.java</url>
-          <line>44</line>
-          <properties class="org.launchcode.techjobs.oo.Job" method="toString">
+          <url>file://$PROJECT_DIR$/src/test/java/org/launchcode/techjobs/oo/JobTest.java</url>
+          <line>11</line>
+          <properties class="org.launchcode.techjobs.oo.JobTest" method="testSettingJobId">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
-          <option name="timeStamp" value="33" />
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/org/launchcode/techjobs/oo/JobTest.java</url>
+          <line>19</line>
+          <properties class="org.launchcode.techjobs.oo.JobTest" method="testJobConstructorSetsAllFields">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="35" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/Job.java</url>
-          <line>75</line>
+          <line>108</line>
           <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/org/launchcode/techjobs/oo/JobTest.java</url>
-          <line>8</line>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/org/launchcode/techjobs/oo/JobTest.java</url>
-          <line>41</line>
+          <line>43</line>
           <option name="timeStamp" value="18" />
         </line-breakpoint>
       </breakpoints>

@@ -2,6 +2,8 @@ package org.launchcode.techjobs.oo;
 
 import org.junit.Test;
 
+import javax.xml.namespace.QName;
+
 import static org.junit.Assert.*;
 
 public class JobTest {
@@ -41,34 +43,60 @@ public class JobTest {
 
     @Test
     public void testToStringContainsCorrectLabelsAndData() {
-        Employer launchCode = new Employer("LaunchCode");
-        Location earthLocation = new Location("Earth");
-        PositionType fullTimeType = new PositionType("Full-Time");
-        CoreCompetency codingCompetency = new CoreCompetency("Coding");
+//        Employer launchCode = new Employer("LaunchCode");
+//        Location earthLocation = new Location("Earth");
+//        PositionType fullTimeType = new PositionType("Full-Time");
+//        CoreCompetency codingCompetency = new CoreCompetency("Coding");
 
-        Job job = new Job("Software Engineer", launchCode, earthLocation, fullTimeType, codingCompetency);
+       // Job job = new Job("Software Engineer", launchCode, earthLocation, fullTimeType, codingCompetency);
+        Job job = new Job( "Software Engineer", new Employer("LaunchCode"), new Location("earthLocation"), new PositionType("fullTimeType"), new CoreCompetency("codingCompetency"));
 
-        String expectedResult = System.lineSeparator() +
-                "Name: " + job.getName() + System.lineSeparator() +
-                "Employer: " + job.getEmployer().toString() + System.lineSeparator() +
-                "Location: " + job.getLocation().toString() + System.lineSeparator() +
-                "Position Type: " + job.getPositionType().toString() + System.lineSeparator() +
-                "Core Competency: " + job.getCoreCompetency().toString() + System.lineSeparator();
-        assertEquals(expectedResult, job.toString());
-    }
+
+//        String expectedResult = System.lineSeparator() +
+//                "Name: " + job.getName() + System.lineSeparator() +
+//                "Employer: " + job.getEmployer().toString() + System.lineSeparator() +
+//                "Location: " + job.getLocation().toString() + System.lineSeparator() +
+//                "Position Type: " + job.getPositionType().toString() + System.lineSeparator() +
+//                "Core Competency: " + job.getCoreCompetency().toString() + System.lineSeparator();
+//        assertEquals(expectedResult, job.toString());
+//    }
+    String expectedResult = String.format(System.lineSeparator() +
+            "ID: %d" + System.lineSeparator() +
+            "Name: %s" + System.lineSeparator() +
+            "Employer: %s" + System.lineSeparator() +
+            "Location: %s" + System.lineSeparator() +
+            "Position Type: %s" + System.lineSeparator() +
+            "Core Competency: %s" + System.lineSeparator(), job.getId(), job.getName(), job.getEmployer(), job.getLocation(), job.getPositionType(), job.getCoreCompetency()
+    );
+
+    assertEquals(expectedResult, job.toString());
+}
+
+
 
     @Test
     public void testToStringHandlesEmptyField() {
-        Employer launchCode = new Employer("LaunchCode");
-        Job job = new Job(null, launchCode, null, null, null);
+        // Employer launchCode = new Employer("LaunchCode");
+        Job job = new Job( null, new Employer("LaunchCode"), new Location(null), new PositionType(null), new CoreCompetency(null));
 
-        String expectedResult = System.lineSeparator() +
-                "Name: Data not available" + System.lineSeparator() +
-                "Employer: LaunchCode" + System.lineSeparator() +
-                "Location: Data not available" + System.lineSeparator() +
-                "Position Type: Data not available" + System.lineSeparator() +
-                "Core Competency: Data not available" + System.lineSeparator();
-        assertEquals(expectedResult, job.toString());
+//        String expectedResult = System.lineSeparator() +
+//                "Name: Data not available" + System.lineSeparator() +
+//                "Employer: LaunchCode" + System.lineSeparator() +
+//                "Location: Data not available" + System.lineSeparator() +
+//                "Position Type: Data not available" + System.lineSeparator() +
+//                "Core Competency: Data not available" + System.lineSeparator();
+
+
+        String result = String.format(System.lineSeparator() +
+                "ID: %d" + System.lineSeparator() +
+                "Name: %s" + System.lineSeparator() +
+                "Employer: %s" + System.lineSeparator() +
+                "Location: %s" + System.lineSeparator() +
+                "Position Type: %s" + System.lineSeparator() +
+                "Core Competency: %s" + System.lineSeparator(), job.getId(), job.getName(), job.getEmployer(), job.getLocation(), job.getPositionType(), job.getCoreCompetency()
+        );
+
+        assertEquals(result, job.toString());
     }
 
 
