@@ -17,7 +17,7 @@ public class Job {
     //  other five fields. The second constructor should also call the first in order to initialize
     //  the 'id' field.
     public Job() {
-       this.id = nextId;
+        id = nextId;
         nextId++;
     }
 
@@ -58,23 +58,23 @@ public class Job {
         // not connected to source data file its not receving getvalue data which is why its returning null
         String result = " ";
 
-        if (name.equals(" ")) {
+        if (name.equals("")) {
             name = "Data not available";
         }
 
-        if (employer.getValue().equals(" ") || employer.getValue() == null) {
+        if (employer.getValue().equals("") || employer.getValue() == null) {
             employer.setValue("Data not available");
         }
 
-        if (location.getValue().equals(" ") || location.getValue() == null) {
+        if (location.getValue().equals("") || location.getValue() == null) {
             location.setValue("Data not available");
         }
 
-        if (coreCompetency.getValue().equals(" ") || coreCompetency.getValue() == null) {
+        if (coreCompetency.getValue().equals("") || coreCompetency.getValue() == null) {
             coreCompetency.setValue("Data not available");
         }
 
-        if (positionType.getValue().equals(" ") || positionType.getValue() == null) {
+        if (positionType.getValue().equals("") || positionType.getValue() == null) {
             positionType.setValue("Data not available");
         }
 
