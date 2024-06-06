@@ -17,7 +17,7 @@ public class Job {
     //  other five fields. The second constructor should also call the first in order to initialize
     //  the 'id' field.
     public Job() {
-        id = nextId;
+       this.id = nextId;
         nextId++;
     }
 
@@ -43,18 +43,19 @@ public class Job {
 
     @Override
     public String toString() {
-//        String result = System.lineSeparator() ;
-//
-//        // result += "ID: " + id + System.lineSeparator();
-//       // result += "Name: " + (name == null || !name.isEmpty()) ? name:  "Data not available";
-//        if (employer != null) result += "Employer: " + employer.getValue() + System.lineSeparator();
-//        else result += "Employer: " + "Data not available" + System.lineSeparator();
-//        result += "Location: " + (location != null ? location.getValue() : "Data not available") + System.lineSeparator();
-//        result += "Position Type: " + (positionType != null ? positionType.getValue() : "Data not available") + System.lineSeparator();
-//        result += "Core Competency: " + (coreCompetency != null ? coreCompetency.getValue() : "Data not available") + System.lineSeparator();
-//
-//        return result;
-// }
+////        String result = System.lineSeparator() ;
+////
+////        // result += "ID: " + id + System.lineSeparator();
+////       // result += "Name: " + (name == null || !name.isEmpty()) ? name:  "Data not available";
+////        if (employer != null) result += "Employer: " + employer.getValue() + System.lineSeparator();
+////        else result += "Employer: " + "Data not available" + System.lineSeparator();
+////        result += "Location: " + (location != null ? location.getValue() : "Data not available") + System.lineSeparator();
+////        result += "Position Type: " + (positionType != null ? positionType.getValue() : "Data not available") + System.lineSeparator();
+////        result += "Core Competency: " + (coreCompetency != null ? coreCompetency.getValue() : "Data not available") + System.lineSeparator();
+////
+////        return result;
+//// }
+        // not connected to source data file its not receving getvalue data which is why its returning null
         String result = " ";
 
         if (name.equals(" ")) {
@@ -87,6 +88,7 @@ public class Job {
         );
 
     }
+
 
 
 
